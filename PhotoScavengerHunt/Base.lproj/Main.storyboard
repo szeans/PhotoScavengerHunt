@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Scavenger Hunt-->
+        <scene sceneID="Qqw-MZ-nkC">
+            <objects>
+                <tableViewController id="udb-Ew-eZR" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="EJP-Jy-Dae">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="MKO-Ok-paa">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MKO-Ok-paa" id="hmg-WK-F2t">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="lEt-K3-WZN">
+                                            <rect key="frame" x="15" y="10.999999999999998" width="373" height="20.333333333333332"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYO-My-iWK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="339.33333333333331" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="circle.inset.filled" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7fG-h9-HJo">
+                                                    <rect key="frame" x="353.33333333333331" y="0.99999999999999822" width="19.666666666666686" height="19"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7fG-h9-HJo" firstAttribute="leading" secondItem="gYO-My-iWK" secondAttribute="trailing" constant="15" id="l9D-cJ-wNM"/>
+                                                <constraint firstAttribute="trailing" secondItem="7fG-h9-HJo" secondAttribute="trailing" constant="15" id="qmh-kr-vC5"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="lEt-K3-WZN" firstAttribute="leading" secondItem="hmg-WK-F2t" secondAttribute="leading" constant="5" id="5fG-Eb-stQ"/>
+                                        <constraint firstItem="lEt-K3-WZN" firstAttribute="leading" secondItem="hmg-WK-F2t" secondAttribute="leading" constant="15" id="6qo-ib-3ga"/>
+                                        <constraint firstAttribute="trailing" secondItem="lEt-K3-WZN" secondAttribute="trailing" constant="5" id="IzS-YI-pQI"/>
+                                        <constraint firstAttribute="trailing" secondItem="lEt-K3-WZN" secondAttribute="trailing" constant="15" id="XI4-v5-Tdv"/>
+                                        <constraint firstAttribute="trailing" secondItem="lEt-K3-WZN" secondAttribute="trailing" constant="5" id="bdh-xx-X2F"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="udb-Ew-eZR" id="rCY-gj-xZn"/>
+                            <outlet property="delegate" destination="udb-Ew-eZR" id="gaA-cb-wwo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Photo Scavenger Hunt" id="Lps-j4-L9O"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14d-XO-6tD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-341.2213740458015" y="-37.323943661971832"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mq0-0x-bVe">
+            <objects>
+                <navigationController id="Ekw-fF-Wyr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RzC-jD-jT5">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="udb-Ew-eZR" kind="relationship" relationship="rootViewController" id="nG2-vs-45D"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kbr-da-ma8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1247" y="-37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.inset.filled" catalog="system" width="128" height="123"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
