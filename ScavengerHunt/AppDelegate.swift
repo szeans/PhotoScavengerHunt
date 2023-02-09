@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  PhotoScavengerHunt
+//  lab-task-squirrel
 //
-//  Created by SEAN CHOI on 2/8/23.
+//  Created by Charlie Hieger on 11/15/22.
 //
 
 import UIKit
